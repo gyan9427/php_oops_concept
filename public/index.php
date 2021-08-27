@@ -2,8 +2,7 @@
 
 include "../vendor/autoload.php";
 
-use Src\utilities\MobileSniffer;
+use Src\clients\Client;
 
-$ms = new MobileSniffer();
+$c = new Client();
 
-var_dump($ms->findBrowser());
