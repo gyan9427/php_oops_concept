@@ -6,6 +6,7 @@ use Src\clients\Client;
 use Src\classes\ImplementAlpha;
 use Src\classes\ConSql;
 use Src\classes\UseProducts;
+use Src\classes\Abstracts\NorthRegion;
 
 $c = new Client();
 
@@ -19,5 +20,8 @@ $cs->testConnection();
 
 $pro = new UseProducts();
 
+$nr = new NorthRegion();
+
+echo $nr->displayShow();
 
 
